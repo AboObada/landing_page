@@ -17,7 +17,30 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="#">
-                    <button type="button" class="btn btn-primary">اطلب نسخة تجريبية</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">اطلب نسخة تجريبية</button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">طلب نسخة تجريبية </h5>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <input type="email" placeholder="البريد الإلكتروني">
+                                        <input type="text" placeholder="رقم هاتف للتواصل">
+                                    </div>
+                                    <div class="mb-3">
+                                        <textarea placeholder=" لماذا تطلب النسخة التجريبية"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-primary">طلب </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -25,42 +48,31 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">  الرئيسية </a>
+                            <a class="nav-link" href="#">  الرئيسية<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"> عن المنتج </a>
+                            <a class="nav-link" href="#second_div"> عن المنتج </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"> المميزات </a>
+                            <a class="nav-link" href="#first_div"> المميزات </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"> ؟TRUE لماذا</a>
+                            <a class="nav-link" href="#third_div"> ؟TRUE لماذا</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="#">تواصل معنا </a>
+                            <a class="nav-link" href="#end_div">تواصل معنا </a>
                         </li>
                     </ul>
-                </div>
-            </nav>            
-                
-            <!-- <div class="row">
-                <div class="col-10">
-                    <button type="button" class="btn btn-primary">
-                        <a class="navbar-brand" href="#">اطلب نسخة تجريبية</a>
-                    </button>
-                    <button type="button" class="btn btn-link"> <a href="">تواصل معنا</a></button>
-                    <button type="button" class="btn btn-link">  <a href=""> ؟TRUE لماذا</a></button>
-                    <button type="button" class="btn btn-link"> <a href=""> المميزات </a> </button>
-                    <button type="button" class="btn btn-link">  <a href=""> عن المنتج </a> </button>
-                    <button type="button" class="btn btn-link active"> <a href="">  الرئيسية </a>  </button>
-                </div>
-                <div class="col-lg-2">
                     <div class="logo">
                         <img width="100%" src="images/Frame.svg" alt="">
-                        
                     </div>
                 </div>
-            </div> -->
+            </nav>            
+        
+                
+                 
+                
+            
             <div class="row">
                 <div class="col-md-6 col-sm-12">
                     <img width="100%" src="images/Asset 1@2x 1.svg" alt="">
@@ -71,13 +83,13 @@
                         <h1>خطوة نحو الرقمنة</h1>
                         <p>لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت.</p>
                         <button type="button" class="btn btn-primary copy_btn">طلب نسخة تجريبية</button>
-                        <button type="button" class="btn btn-primary video_btn"><i class="far fa-play-circle"></i>مشاهدة الفيديو</button>
+                        <button type="button" class="btn btn-primary video_btn"><i class="fas fa-play-circle"></i>مشاهدة الفيديو</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="second_section">
+    <section class="second_section" id="first_div">
         <div class="container">
             <div class="main_title">
                 TRUE مميزات 
@@ -130,6 +142,8 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="container-fluid" id="second_div">
             <div class="row">
                 <div class="col-md-6 col-sm-12 l_part">
                     <div class="main_title">عن المنتج</div>
@@ -139,9 +153,9 @@
                     <img src="images/03 1.svg" alt="">
                 </div>
             </div>
-        </div>
+        </div>    
     </section>
-    <section class="third_section">
+    <section class="third_section" id="third_div">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-12">
@@ -163,7 +177,7 @@
             </div>
         </div>
     </section>
-    <footer class="foot">
+    <footer class="foot" id="end_div">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -204,4 +218,13 @@
         </div>
     </div>
 
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+   
 </body>
+</html>

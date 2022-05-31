@@ -1,6 +1,16 @@
 @font-face {
-  font-family: myFirstFont;
-  src: url(../fonts/DINNextLTArabic-Bold-4.ttf);
+  font-family: myboldFont;
+  src: url(../fonts/ArbFONTS-DINNextLTArabic-Bold-2.ttf);
+}
+
+@font-face {
+  font-family: mylightFont;
+  src: url(../fonts/ArbFONTS-DINNEXTLTARABIC-LIGHT-1.ttf);
+}
+
+@font-face {
+  font-family: mymediumFont;
+  src: url(../fonts/ArbFONTS-DINNextLTArabic-Medium-2.ttf);
 }
 
 body p, body ul, body form {
@@ -12,30 +22,133 @@ body a {
 }
 
 .first_section {
-  background-color: #ECF3FF;
-  padding-top: 50px;
+  background: url(../images/bg.svg);
   padding-bottom: 50px;
 }
 
 .first_section .btn-primary {
+  font-weight: 700;
+  font-family: myboldfont;
   border-radius: 25px;
-}
-
-.first_section .btn-primary a {
-  color: #fff;
-  padding: 0 20px;
-  font-size: 18px;
-  font-weight: 500;
-  margin: auto;
+  padding: 5px 25px;
 }
 
 .first_section .nav-link {
-  color: #000 !important;
+  color: #000;
   padding-left: 1.5rem !important;
 }
 
 .first_section .active {
   color: blue !important;
+}
+
+.first_section .logo {
+  margin-left: auto;
+}
+
+.first_section .modal-content {
+  position: relative;
+  border-radius: 15px;
+  padding: 8px 20px;
+}
+
+.first_section .modal-content .modal-header {
+  padding-bottom: 0;
+  text-align: right;
+  font-weight: 700;
+  font-family: myboldfont;
+  display: inline-block;
+  border: none;
+}
+
+.first_section .modal-content .modal-body input {
+  width: 50%;
+  background-color: rgba(64, 123, 255, 0.04);
+  border: 1px solid rgba(64, 123, 255, 0.17);
+  border-radius: 5px;
+  padding: 5px 20px;
+  outline: none;
+}
+
+.first_section .modal-content .modal-body input::-webkit-input-placeholder {
+  text-align: right;
+  font-size: 11px;
+  color: #575757;
+}
+
+.first_section .modal-content .modal-body input:-ms-input-placeholder {
+  text-align: right;
+  font-size: 11px;
+  color: #575757;
+}
+
+.first_section .modal-content .modal-body input::-ms-input-placeholder {
+  text-align: right;
+  font-size: 11px;
+  color: #575757;
+}
+
+.first_section .modal-content .modal-body input::placeholder {
+  text-align: right;
+  font-size: 11px;
+  color: #575757;
+}
+
+.first_section .modal-content .modal-body textarea {
+  width: 101%;
+  height: 100px;
+  background-color: rgba(64, 123, 255, 0.04);
+  border: 1px solid rgba(64, 123, 255, 0.17);
+  border-radius: 5px;
+  padding: 5px 20px;
+  margin-top: -10px;
+  outline: none;
+}
+
+.first_section .modal-content .modal-body textarea::-webkit-input-placeholder {
+  padding-top: 10px;
+  text-align: right;
+  font-size: 11px;
+  font-weight: bold;
+  color: #575757;
+}
+
+.first_section .modal-content .modal-body textarea:-ms-input-placeholder {
+  padding-top: 10px;
+  text-align: right;
+  font-size: 11px;
+  font-weight: bold;
+  color: #575757;
+}
+
+.first_section .modal-content .modal-body textarea::-ms-input-placeholder {
+  padding-top: 10px;
+  text-align: right;
+  font-size: 11px;
+  font-weight: bold;
+  color: #575757;
+}
+
+.first_section .modal-content .modal-body textarea::placeholder {
+  padding-top: 10px;
+  text-align: right;
+  font-size: 11px;
+  font-weight: bold;
+  color: #575757;
+}
+
+.first_section .modal-content .modal-footer {
+  border: none;
+}
+
+.first_section .modal-content .modal-footer .btn {
+  position: absolute;
+  left: 30px;
+  bottom: 18px;
+  font-family: mylightfont;
+  font-weight: 700;
+  border-radius: 3px;
+  padding: 8px 35px;
 }
 
 .first_section .first_content {
@@ -48,28 +161,41 @@ body a {
 
 .first_section .first_content .title {
   color: #3E82FC;
-  font-weight: bold;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 .first_section .first_content h1 {
   font-size: 45px;
   font-weight: 700;
-  font-family: myFirstFont;
+  font-family: myboldFont;
   line-height: 1.5;
 }
 
+.first_section .first_content p {
+  font-family: mylightFont;
+  font-weight: 400;
+}
+
 .first_section .first_content .copy_btn {
+  background: #3E82FC;
   -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  font-family: myboldFont;
+  font-weight: 700;
+  padding: 12px 25px 15px;
 }
 
 .first_section .first_content .video_btn {
   -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   background: #fff;
-  color: blue;
+  color: #3e82fc;
   border: none;
   margin-left: 30px;
+  font-family: myboldFont;
+  font-weight: 700;
+  padding: 12px 25px 15px;
 }
 
 .first_section .first_content .fa-play-circle {
@@ -90,7 +216,8 @@ body a {
   padding-top: 50px;
   padding-bottom: 30px;
   font-size: 30px;
-  font-family: myFirstFont;
+  font-family: myboldFont;
+  font-weight: 700;
   color: #662D91;
 }
 
@@ -105,11 +232,20 @@ body a {
 .second_section .slide_box .card {
   display: inline-block;
   text-align: right;
-  padding: 30px;
+  padding: 36px;
   border: none;
 }
 
+.second_section .slide_box .card h3 {
+  color: #2d2c2c;
+  font-family: mymediumfont;
+  font-weight: 400;
+}
+
 .second_section .slide_box .card p {
+  text-align: justify;
+  font-family: mylightfont;
+  font-weight: 400;
   color: #7A7A7A;
 }
 
@@ -120,14 +256,20 @@ body a {
 }
 
 .second_section .l_part p {
+  font-size: 20px;
+  font-family: mylightfont;
+  font-weight: 400;
+  line-height: 39px;
   color: #7A7A7A;
-  width: 80%;
+  width: 83%;
   text-align: justify;
-  margin-left: 95px;
+  margin-left: 87px;
 }
 
 .second_section .l_part .main_title {
   position: relative;
+  margin-top: 63px;
+  margin-right: 20px;
 }
 
 .second_section .l_part .main_title::before {
@@ -154,8 +296,8 @@ body a {
 
 .third_section {
   background-color: #fff;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .third_section .main_title {
@@ -164,7 +306,8 @@ body a {
   padding-top: 50px;
   padding-bottom: 30px;
   font-size: 30px;
-  font-family: myFirstFont;
+  font-family: myboldFont;
+  font-weight: 700;
   color: #662D91;
 }
 
@@ -181,13 +324,13 @@ body a {
 
 .third_section p {
   color: #7a7a7ab8;
-  font-family: myFirstFont;
+  font-family: mymediumFont;
+  font-weight: 400;
   width: 80%;
   text-align: justify;
   margin-left: 21%;
-  font-size: 20px;
+  font-size: 21px;
   line-height: 1.7;
-  font-weight: 400;
 }
 
 .third_section p span {
@@ -196,6 +339,10 @@ body a {
 }
 
 .third_section ul {
+  width: 80%;
+  font-family: mylightfont;
+  font-weight: 300;
+  margin-left: auto;
   list-style: decimal;
   text-align: right;
   line-height: 1.7;
@@ -215,8 +362,8 @@ body a {
 }
 
 .foot {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   background-color: #3E82FC;
 }
 
@@ -225,8 +372,9 @@ body a {
   text-align: right;
   padding-bottom: 30px;
   font-size: 30px;
-  font-family: myFirstFont;
+  font-family: myboldFont;
   color: #fff;
+  font-weight: 700;
 }
 
 .foot .main_title::before {
@@ -245,16 +393,17 @@ body a {
 }
 
 .foot .col-md-8 .btn {
+  color: #404040;
   padding: 0;
   padding-right: 10px;
   position: absolute;
-  left: 21%;
+  left: 20%;
   background-color: #fff;
-  font-family: myfirstfont;
+  font-family: myboldfont;
 }
 
 .foot .col-md-8 .btn i {
-  color: #000;
+  color: #404040;
   -webkit-transform: rotate(230deg);
           transform: rotate(230deg);
 }
@@ -267,6 +416,7 @@ body a {
   padding: 10px;
   padding-right: 20px;
   border: rgba(255, 255, 255, 0.17) 1px solid;
+  margin-left: 5px;
   outline: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -274,18 +424,26 @@ body a {
 
 .foot input::-webkit-input-placeholder {
   color: #fff;
+  font-family: mylightfont;
+  font-weight: 400;
 }
 
 .foot input:-ms-input-placeholder {
   color: #fff;
+  font-family: mylightfont;
+  font-weight: 400;
 }
 
 .foot input::-ms-input-placeholder {
   color: #fff;
+  font-family: mylightfont;
+  font-weight: 400;
 }
 
 .foot input::placeholder {
   color: #fff;
+  font-family: mylightfont;
+  font-weight: 400;
 }
 
 .foot input:focus {
@@ -294,7 +452,7 @@ body a {
 }
 
 .foot form textarea {
-  width: 80.5%;
+  width: 81.5%;
   height: 100px;
   border-radius: 5px;
   text-align: right;
@@ -308,18 +466,26 @@ body a {
 
 .foot textarea::-webkit-input-placeholder {
   color: #fff;
+  font-family: mylightfont;
+  font-weight: 400;
 }
 
 .foot textarea:-ms-input-placeholder {
   color: #fff;
+  font-family: mylightfont;
+  font-weight: 400;
 }
 
 .foot textarea::-ms-input-placeholder {
   color: #fff;
+  font-family: mylightfont;
+  font-weight: 400;
 }
 
 .foot textarea::placeholder {
   color: #fff;
+  font-family: mylightfont;
+  font-weight: 400;
 }
 
 .foot textarea:focus {
@@ -330,10 +496,18 @@ body a {
 .foot p {
   text-align: left;
   color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
 }
 
 .foot h5 {
   color: #fff;
+  font-weight: 400;
+}
+
+.foot .btn {
+  width: 110px;
+  font-weight: 700;
+  font-family: myboldfont;
 }
 
 .foot i {
@@ -349,6 +523,8 @@ body a {
 }
 
 .end p {
+  font-family: mylightfont;
+  font-weight: 400;
   color: #000;
   text-align: center;
   padding-top: 25px;
