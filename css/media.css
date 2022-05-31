@@ -1,0 +1,36 @@
+@media (max-width:770px) {
+    .l_part{
+        margin-bottom: 25px;
+    }
+    .end img {
+        text-align: center;
+        width: 100%;
+    }
+    .end .col-4 {
+        display: none;
+    }
+    .end .col-3 {
+        margin: auto;
+    }
+    .foot .col-md-4 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .foot p  {
+        text-align: center;
+    }
+    .foot .col-md-8 {
+        text-align: center;
+        
+    }
+    .foot .col-md-8 .btn {
+        left: 12%;
+    }
+}
+@media (max-width:500px) {
+    .first_section .first_content {
+        width: 100%;
+        left: 0;
+    }
+    
+}

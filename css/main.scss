@@ -1,0 +1,287 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/DINNextLTArabic-Bold-4.ttf);
+  }
+  body {
+      p, ul, form {
+      direction: rtl;
+      
+  }
+  a {
+      text-decoration: none;
+  }
+}
+
+.first_section {
+    background-color: #ECF3FF;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+    .btn-primary {
+        
+        border-radius: 25px;
+    }
+    .btn-primary a {
+        color: #fff;
+        padding: 0 20px;
+        font-size: 18px;
+        font-weight: 500;
+        margin: auto;
+    }
+    
+    .nav-link  {
+        color: #000 !important;
+        padding-left: 1.5rem !important;
+    }
+    .active {
+        color: blue !important;
+    }
+    .first_content {
+        position: relative;
+        top: 15%;
+        left: 23%;
+        text-align: right;
+        width: 75%;
+        // transform: translate(31%, 77%);
+        .title {
+            color: #3E82FC;
+            font-weight: bold;
+        }
+        h1 {
+            font-size: 45px;
+            font-weight: 700;
+            font-family: myFirstFont;
+            line-height: 1.5;
+        }
+        .copy_btn {
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;;
+        }
+        .video_btn {
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;;
+            background: #fff;
+            color: blue;
+            border: none;
+            margin-left: 30px;
+        }
+        .fa-play-circle {
+            padding-right: 10px;
+        }
+    }
+    .col-6 img {
+        width: 100%;
+        padding-top: 50px;
+    }
+}
+.second_section {
+    background-color: #fdfeff;;
+    .main_title {
+        text-align: right;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        font-size: 30px;
+        font-family: myFirstFont;
+        color: #662D91;
+    }
+    .slide_box {
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        margin-bottom: 120px;
+        .card {
+            display: inline-block;
+            text-align: right;
+            padding: 30px;
+            border: none;
+            p {
+                color: #7A7A7A;
+            }
+        }
+    }
+    .l_part {
+        background-color: #F4F8FF;
+        padding: 20px;
+        padding-right: 50px;
+        p {
+            color: #7A7A7A;
+            width: 80%;
+            text-align: justify;
+            margin-left: 95px;
+        }
+        .main_title {
+            position: relative;
+        }
+        .main_title::before {
+            content: "";
+            position: absolute;
+            width: 10%;
+            height: 5px;
+            top: 35%;
+            right: 0;
+            background-color: #FFB951;
+            border-radius: 10px;
+        }
+    }
+    .r_part {
+        background: #E2EDFF;
+        padding: 20px;
+        padding-top: 40px;
+        margin-top: -40px;
+        img {
+            width: 100%;
+        }
+    }
+}
+.third_section {
+    background-color: #fff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .main_title {
+        position: relative;
+        text-align: right;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        font-size: 30px;
+        font-family: myFirstFont;
+        color: #662D91;
+    }
+    .main_title::before {
+        content: "";
+        position: absolute;
+        width: 8%;
+        height: 5px;
+        top: 35%;
+        right: 0;
+        background-color: #FFB951;
+        border-radius: 10px;
+    }
+    p {
+        color: #7a7a7ab8;
+        font-family: myFirstFont;
+        width: 80%;
+        text-align: justify;
+        margin-left: 21%;
+        font-size: 20px;
+        line-height: 1.7;
+        font-weight: 400;
+        span {
+            color: #000;
+            font-size: 25px;
+        }
+    }
+    ul {
+        list-style: decimal;
+        text-align: right;
+        line-height: 1.7;
+        padding-right: 10px;
+        li {
+            padding-bottom: 15px;
+        }
+        .one_p {
+            color: #232323;
+        }
+        .two_p {
+            color: #777
+        }
+    }
+}
+.foot {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #3E82FC;
+    .main_title {
+        position: relative;
+        text-align: right;
+        // padding-top: 50px;
+        padding-bottom: 30px;
+        font-size: 30px;
+        font-family: myFirstFont;
+        color: #fff;
+    }
+    .main_title::before {
+        content: "";
+        position: absolute;
+        width: 3%;
+        height: 5px;
+        top: -4%;
+        right: 0;
+        background-color: #FFB951;
+        border-radius: 10px;
+    }
+    .col-md-8 {
+        position: relative;
+        .btn {
+            padding: 0;
+            padding-right: 10px;
+            position: absolute;
+            left: 21%;
+            background-color: #fff;
+            font-family: myfirstfont;
+            i {
+                color: #000;
+                transform: rotate(230deg);
+            }
+        }
+    }
+    form input {
+        width: 40%;
+        border-radius: 5px;
+        text-align: right;
+        background: rgba(255, 255, 255, 0.04);
+        padding: 10px;
+        padding-right: 20px;
+        border: rgba(255, 255, 255, 0.17) 1px solid;
+        outline: none;
+        transition: 0.3s;
+    }
+    input::placeholder {
+        color: #fff;
+    }
+    input:focus{
+        box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.8);
+    }
+
+    form textarea {
+        width: 80.5%;
+        height: 100px;
+        border-radius: 5px;
+        text-align: right;
+        background: rgba(255, 255, 255, 0.04);
+        margin-top: 10px;
+        padding: 10px;
+        padding-right: 20px;
+        border: rgba(255, 255, 255, 0.17) 1px solid;
+        outline: none;
+    }    
+    textarea::placeholder {
+        color: #fff;
+    }
+    textarea:focus{
+        box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.8);
+    }
+    p {
+        text-align: left;
+        color: rgba(255, 255, 255, 0.5);
+    }
+    h5 {
+        color: #fff;
+    }
+    i {
+        color: #fff;
+        background-color: rgba(255, 255, 255, 0.06);
+        padding: 12px;
+        border-radius: 50%;
+    }
+   
+}
+.end {
+    background-color: #fff;
+    padding: 12px;
+    p {
+        color: #000;
+        text-align: center;
+        padding-top: 25px;
+    }
+    img {
+        width: 60%;
+    }
+}
